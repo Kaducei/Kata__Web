@@ -1,0 +1,257 @@
+body {
+  font-family: "TT Lakes";
+  padding: 0;
+  margin: 0;
+  background-color: #f8f8f8;
+}
+.main {
+  background-color: #f8f8f8;
+}
+
+.container {
+  width: 100%;
+}
+.service {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 10px;
+  align-content: center;
+}
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  max-width: 320px;
+  flex-basis: auto;
+}
+h1 {
+  font-size: 28px;
+  line-height: 40px;
+
+  letter-spacing: -0.6px;
+
+  color: #1b1c21;
+  margin-left: 16px;
+}
+.main-header__blue-block {
+  position: absolute;
+  background-color: #41f6d7;
+  width: 4px;
+  height: 40px;
+  align-self: center;
+  border-radius: 0px 20px 20px 0px;
+}
+.nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-shrink: 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.nav::-webkit-scrollbar {
+  display: none;
+}
+.nav__block {
+  background: #f8f8f8;
+  padding: 5px;
+  /* min-width: 238px; */
+  max-height: 34px;
+  flex-shrink: 0;
+}
+.nav__name {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: #7e7e82;
+  padding: 10px;
+}
+.nav__block_repair {
+  border: 1px solid #41f6d7;
+  border-radius: 6px;
+  margin-left: 15px;
+  background: #ffffff;
+}
+/*
+section-main
+*/
+.section-main__text {
+  display: flex;
+  flex-direction: column;
+
+  font-size: 14px;
+  line-height: 129%;
+  /* or 129% */
+  letter-spacing: 0.2px;
+  color: #1b1c21;
+  width: 50%;
+  margin-left: 16px;
+  margin-top: 24px;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+.section-main {
+  display: flex;
+}
+.section-main__image {
+  flex-direction: column;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  display: flex;
+  width: 50%;
+}
+.section-main__image > img {
+  width: 100%;
+}
+
+.section-company_pharagraph2 {
+  display: none;
+}
+@media (max-width: 768px) {
+  .section-main {
+    flex-direction: column;
+  }
+  .section-main__text,
+  .section-main__image {
+    width: 100%;
+  }
+}
+
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+}
+.button__read-more {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: #1b1c21;
+  max-width: 150px;
+  max-height: 24px;
+}
+.button__read-more_image {
+  margin-right: 15px;
+}
+.service__elem {
+  box-sizing: content-box;
+}
+
+.service__elem__call {
+  display: none;
+}
+.service__elem_chat {
+  display: none;
+}
+.service__elem_profile {
+  display: none;
+}
+.service__elem_divider-2 {
+  display: none;
+}
+.main__buttons {
+  display: none;
+}
+@media (min-width: 768px) {
+  .service__elem__call {
+    display: flex;
+  }
+  .service__elem_chat {
+    display: flex;
+  }
+  .service__elem_profile {
+    display: flex;
+  }
+  .service__elem_divider-2 {
+    display: flex;
+  }
+  .section-company_pharagraph2 {
+    display: flex;
+  }
+  .divider-1 {
+    order: -1;
+  }
+  .service__elem_divider-1 {
+    order: -2;
+  }
+  .service__elem_menu-burger {
+    order: -2;
+    flex-wrap: nowrap;
+  }
+
+  .service {
+    padding: 24px;
+  }
+  .service__elem:nth-child(1n) {
+    display: flex;
+  }
+  .service__elem_call {
+    margin-left: 340px;
+  }
+  .section-main__text {
+    margin-right: 20px;
+  }
+  .main__buttons_repair,
+  .main__buttons_search {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+  }
+  .main__buttons_repair span,
+  .main__buttons_search span {
+    margin-right: 10px;
+  }
+}
+@media (min-width: 1120px) {
+  .service {
+    display: none;
+  }
+  .main-header {
+    display: flex;
+  }
+  .main__flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1.2em;
+    padding-right: 1.2em;
+  }
+  .nav {
+    overflow: hidden;
+    flex-wrap: wrap;
+    margin-bottom: -20px;
+  }
+  .nav__block_reviews {
+    order: 2;
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+  .nav:after {
+    content: "";
+    width: 100%;
+    order: 0;
+    flex-wrap: wrap;
+    order: 1;
+  }
+
+  .main__buttons {
+    display: flex;
+  }
+}
