@@ -49,7 +49,7 @@ h1 {
   width: 100%;
   justify-content: space-between;
   flex-shrink: 0;
-  overflow-x: auto;
+  overflow-x: scroll;
   overflow-y: hidden;
 }
 .nav::-webkit-scrollbar {
@@ -59,7 +59,6 @@ h1 {
   background: #f8f8f8;
   padding: 5px;
   /* min-width: 238px; */
-  max-height: 34px;
   flex-shrink: 0;
 }
 .nav__name {
@@ -69,11 +68,14 @@ h1 {
   color: #7e7e82;
   padding: 10px;
 }
-.nav__block_repair {
+.nav__name:focus,
+.nav__name:active,
+.nav__name:hover {
+  outline: none;
   border: 1px solid #41f6d7;
   border-radius: 6px;
-  margin-left: 15px;
   background: #ffffff;
+  transition-duration: 0.3s;
 }
 /*
 section-main
@@ -234,9 +236,12 @@ a {
     padding-right: 1.2em;
   }
   .nav {
-    overflow: hidden;
+    overflow: visible;
     flex-wrap: wrap;
     margin-bottom: -20px;
+  }
+  .nav__block_repair {
+    margin-left: 20px;
   }
   .nav__block_reviews {
     order: 2;
