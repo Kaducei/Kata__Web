@@ -37,15 +37,24 @@ button:hover {
   filter: opacity(50%);
   transition: 0.3s;
 }
-.menu__nav {
+li:focus,
+li:active,
+li:hover {
+  outline: none;
+  box-shadow: 0.5px 0.5px 0 2px #41f6d7;
+  border-radius: 6px;
+  background: #ffffff;
+  transition-duration: 0.3s;
+}
+.menu-nav {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
 }
-.menu__nav li {
+.menu-nav li {
   margin-top: 30px;
 }
-.menu__nav::before {
+.menu-nav::before {
   content: "";
   width: 2px;
   height: 40px;
@@ -57,7 +66,7 @@ button:hover {
   top: 110px;
   border-radius: 0px 20px 20px 0px;
 }
-.menu__nav_repair {
+.menu-nav__repair {
   color: #7e7e82;
 }
 .contact {
