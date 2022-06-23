@@ -70,11 +70,15 @@ h1 {
   color: #7e7e82;
   padding: 10px;
 }
+.nav__block a {
+  color: #7e7e82;
+}
 .nav__block:focus,
 .nav__block:active,
 .nav__block:hover {
   outline: none;
   border: 1px solid #41f6d7;
+  padding: 12px;
   border-radius: 6px;
   background: #ffffff;
   transition-duration: 0.3s;
@@ -135,6 +139,7 @@ button {
 }
 a {
   text-decoration: none;
+  color: #1b1c21;
 }
 .section-main__button {
   padding: 0;

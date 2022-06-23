@@ -1,6 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
-
 @font-face {
-  font-family: "TTLakes";
-  src: url("");
+  font-family: "TT Lakes-Regular";
+  src: url(../assets/fonts/TTLakes-Regular.woff);
+}
+@font-face {
+  font-family: "TT Lakes-Medium";
+  src: url(../assets/fonts/TTLakes-Medium.woff);
+}
+@font-face {
+  font-family: "TT Lakes-Bold";
+  src: url(../assets/fonts/TTLakes-Bold.woff);
 }
