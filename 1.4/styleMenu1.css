@@ -5,6 +5,8 @@
   box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02),
     16px 0px 52px rgba(14, 24, 80, 0.2);
   overflow-y: auto;
+  display: flex;
+  flex-direction: column;
 }
 .menu::-webkit-scrollbar {
   display: none;
@@ -41,9 +43,6 @@ li:focus,
 li:active,
 li:hover {
   outline: none;
-  box-shadow: 0.5px 0.5px 0 2px #41f6d7;
-  border-radius: 6px;
-  background: #ffffff;
   transition-duration: 0.3s;
 }
 .menu-nav {
@@ -66,15 +65,23 @@ li:hover {
   top: 110px;
   border-radius: 0px 20px 20px 0px;
 }
+.menu-nav__button {
+  padding: 5px;
+}
 .menu-nav__repair {
   color: #7e7e82;
 }
 .contact {
   display: flex;
   flex-direction: column;
-  margin-top: 300px;
   margin-left: 30px;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+.nav-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
 .contact__buttons {
   display: flex;
@@ -89,13 +96,9 @@ li:hover {
 }
 .lang-link {
   display: flex;
-
-  margin-left: 25px;
-  justify-content: flex-start;
   margin-bottom: 20px;
-  margin-top: 15px;
 }
-.lang-link a {
+.lang-link a:not(:first-child) {
   margin-left: 5px;
 }
 .lang-link a:nth-child(1n) {
