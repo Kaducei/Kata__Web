@@ -7,6 +7,7 @@
   overflow-y: auto;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 .menu::-webkit-scrollbar {
   display: none;
@@ -14,37 +15,46 @@
 .menu__head {
   display: flex;
   justify-content: space-between;
-  margin: 15px;
+  margin-top: 15px;
   width: 320px;
 }
 .menu-head__logo {
   display: flex;
   align-items: center;
+  margin-left: 10px;
 }
 .menu__head_logo img {
-  margin-left: 10px;
+  margin-left: 20px;
 }
 .menu__head_search {
   display: flex;
   align-items: center;
-  margin-right: 40px;
+  margin-right: 30px;
 }
 ul {
   list-style: none;
 }
-a {
+li a {
   color: #1b1c21;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
 }
 button:hover {
   filter: opacity(50%);
   transition: 0.3s;
 }
-li:focus,
-li:active,
-li:hover {
+.menu-nav__button a:focus,
+.menu-nav__button a:active {
   outline: none;
   transition-duration: 0.3s;
+  color: #7e7e82;
 }
+a:hover {
+  color: #e82761;
+  transition: 0.3s;
+}
+
 .menu-nav {
   display: flex;
   flex-direction: column;
@@ -62,15 +72,13 @@ li:hover {
   width: 4px;
   height: 40px;
   left: 1px;
-  top: 110px;
+  top: 130px;
   border-radius: 0px 20px 20px 0px;
 }
 .menu-nav__button {
   padding: 5px;
 }
-.menu-nav__repair {
-  color: #7e7e82;
-}
+
 .contact {
   display: flex;
   flex-direction: column;
@@ -93,6 +101,7 @@ li:hover {
   font-size: 24px;
   font-weight: bolder;
   margin-top: -1px;
+  color: #1b1c21;
 }
 .lang-link {
   display: flex;
@@ -106,4 +115,11 @@ li:hover {
 }
 .lang-link a:first-child {
   color: #7e7e82;
+}
+.lang-link a:hover {
+  color: #e82761;
+  transition: 0.3s;
+}
+.contact {
+  gap: 20px;
 }
